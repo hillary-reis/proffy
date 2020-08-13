@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-box-base: #FFFFFF;
+	--color-button-text: #FFFFFF;
+	--color-title-in-primary: #FFFFFF;
+	--color-box-footer: #FAFAFC;
+	--color-input-background: #F8F8FC;
+	--color-background: #F0F0F7;
+	--color-line-in-white: #E6E6F0;
+	--color-text-in-primary: #D4C2FF;
+	--color-small-info: #C1BCCC;
+	--color-text-complement: #9C98A6;
+	--color-text-base: #6A6180;
+	--color-text-title: #32264D;
+	--color-primary-darker: #6842c2;
+	--color-primary-dark: #774DD6;
+	--color-primary: #8257E5;
+	--color-primary-light: #916BEA;
+	--color-primary-lighter: #9871F5;
+	--color-secondary: #04D361;
+	--color-secondary-dark: #04BF58;
+
+	/* tamalho da fonte padrão: 16px ou 100% ou 1rem(relativo ao root) */
+	font-size: 60%;
+}
+
+html, body {
+	height: 100vh; /* autura */
+}
+
+body {
+	background-color: var(--color-background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body, input, button, textera {
+	font: 500 1.6rem poppins; /* weight - family - size */
+	color: var(--color-text-base);
+}
+
+#container {
+	width: 90vw; /* largura */
+	max-width: 700px;
+}
+
+@media (min-width: 700px) {
+	:root {
+		font-size: 62.5%; /* todo 1rem vai ser relativo a 10px */
+	}
+}
